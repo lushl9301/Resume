@@ -1,4 +1,4 @@
-\documentclass[a4paper, 10pt]{article}
+\documentclass[a4paper, 12pt]{article}
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -45,13 +45,14 @@
   \end{changemargin}
 }
 
-\newcommand{\contact}[4]{
+\newcommand{\contact}[5]{
   \begin{changemargin}{-0.5in}{-0.5in}
     \begin{center}
       {\Large \scshape {#1}}\\ \smallskip
-      {#2}\\ \smallskip 
+      {#2}\\ \smallskip
       {#3}\\ \smallskip
-      {#4}   \smallskip
+      {#4}\\ \smallskip
+      {#5}   \smallskip
     \end{center}
   \end{changemargin}
 }
@@ -77,20 +78,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{Lu Shengliang}{https://github.com/lushl9301}{SLU001@e.ntu.edu.sg}{(+65) 9611-5113}
+\contact{Lu Shengliang}{github.com/lushl9301}{medium.com/@Lu\_Shengliang}{SLU001@e.ntu.edu.sg}{(+65) 9611-5113}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Objective
-\header{Objective}
+% \header{Objective}
 
-\begin{body}
-  \vspace{14pt}
-  Looking for a 20-week/30-week internship which utilizes my skills and abilities in the Computer Engineering Industry, and helps me in broadening and enhancing my current skill and knowledge.
-\end{body}
+% \begin{body}
+%   \vspace{14pt}
+%   Looking for summer internship (June - Aug 2015) which utilizes my skills and abilities in the Computer Engineering Industry, and helps me in broadening and enhancing my current skill and knowledge.\\
+%   \smallskip
+%   Preferring Java Developer and Big Data Engineer.
+% \end{body}
 
-\smallskip
-\medskip
+% \medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
@@ -98,51 +100,61 @@
 
 \begin{body}
   \vspace{14pt}
-  \textbf{B.Eng. Computer Engineering --- GPA 4.47/5.00} \hfill \emph{Anticipated Graduation: May, 2016} \\
+  \textbf{B.Eng. Computer Engineering --- GPA 4.53/5.00} \hfill \emph{Anticipated Graduation: May, 2016} \\
   \emph{Nanyang Technological University}, Singapore\\
 \end{body}
 
-\smallskip
-\medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Experience
+\smallskip
+\medskip
 \header{Experience}
 
 \begin{body}
   \vspace{14pt}
 
-  \textbf{URECA Project}, \emph{Study of Healthcare and Wellness Science using Wearable Sensors through Scientific Literature Approach} \hfill \emph{Sept 2014 - Jul 2015}\\
+  \textbf{Wincor Nixdorf Internship}, {Development of Secure Thin Client for ATM} \hfill \emph{Dec 2014 - Now}\\
   \vspace*{-4pt}
-  \begin{itemize} \itemsep -0pt  % reduce space between items
-  \item Attached to Sense and Sense-abilities Programme (A*star $I^{2}R$)
-  \item Designing text mining tools
+  \begin{itemize} \itemsep -0pt  \small
+  \item Modified and installed XtratuM Hypervisor on x86 PC
+  \item Developed Linux USB device driver
+  \item Developed ATM client using C++/Qt GUI
+  \item Got familiar with microkernel verification / Security issue
   \end{itemize}
 
-  \textbf{Contestant}, \emph{2013 ACM-ICPC Asia Jakarta Regional Contest} \hfill \emph{Oct 2013}\\
+  \textbf{URECA Project}, {Study of Healthcare and Wellness Science using Wearable Sensors through Scientific Literature Approach} \hfill \emph{Sep 2014 - Jul 2015}\\
   \vspace*{-4pt}
-  \begin{itemize} \itemsep -0pt  % reduce space between items
-  \item Participated on behalf of School of Computer Engineering NTU
-  \item 3 questions solved (in team)
+  \begin{itemize} \itemsep -0pt  \small
+  \item Attached to Sense and Sense-abilities Programme (A*star $I^{2}R$)
+  \item Designing text mining tools using Perl \& Python for analyzing thesis abstracts
+  \item Regex \& Simple Data Structures
+  \end{itemize}
+
+  \textbf{Contestant}, {2013 ACM-ICPC Asia Jakarta Regional Contest} \hfill \emph{Oct 2013}\\
+  \vspace*{-4pt}
+  \begin{itemize} \itemsep -0pt  \small
+  \item Java Programming Language
+  \item Participated representing School of Computer Engineering NTU
+  \item Solved 3 problems (in team)
   \end{itemize}
   
-  \textbf {Contestant}, \emph{National Olympiad in Informatics, China} \hfill \emph{Jul 2010}\\
+  \textbf {Contestant}, {National Olympiad in Informatics, China} \hfill \emph{Jul 2010}\\
   \vspace*{-4pt}
-  \begin{itemize} \itemsep -0pt
-  \item Solved algorithm questions under Linux environment
+  \begin{itemize} \itemsep -0pt \small
+  \item Pascal Programming Language
+  \item Solved algorithm problems under Linux environment
   \item Bronze medalist
   \end{itemize}
 
-  \textbf {Contestant}, \emph{National Olympiad in Informatics in Provinces, China} \hfill \emph{2006 - 2011}\\
+  \textbf {Contestant}, {National Olympiad in Informatics in Provinces, China} \hfill \emph{2006 - 2011}\\
   \vspace*{-4pt}
-  \begin{itemize} \itemsep -0pt
-  \item Solved algorithm questions under Windows environment
-  \item Won several first prizes and second prizes
+  \begin{itemize} \itemsep -0pt \small
+  \item Pascal Programming Language
+  \item Solved algorithm problems under Windows environment
   \end{itemize}
 \end{body}
 
-\smallskip
-\medskip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Publications
 %\header{Selected Publications}
@@ -158,57 +170,56 @@
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Skills
-\header{Skills}
-
-\begin{body}
-  \vspace{14pt}
-  \textbf{Programming:}{} C/C++, Java, Python, Perl, Assembly, Verilog, Pascal, \LaTeX, MATLAB, Haskell, Scheme\\
-  \medskip
-  \textbf{Operating Systems:}{} Linux(Ubuntu, Fedora, Raspbian), Windows, a bit familiarity with Linux Kernel\\
-  \medskip
-  \textbf{Applications:}{} Emacs, Eclipse, Xilinx, ModelSim, NetBeans\\
-  \medskip
-  \textbf{Hardware Testing Devices:}{} Function Generator, Oscilloscope\\
-  \medskip
-  \textbf{Hardware Platform:}{} Arduino, ARM Cortex-M1 based development board, FPGA\\
-\end{body}
-
+\pagebreak
+%Project Highlights
 \smallskip
 \medskip
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Project Highlights
-\header{Project Highlights}
+\header{Coursework Highlights}
 \begin{body}
   \vspace{14pt}
-  \begin{itemize} \itemsep 2pt
-  \item Building a robotic system that can autonomously explore and traverse unknown areas (in a team of eight)
-  \smallskip
-  \item Implemented TLB replacing algorithm based on understanding of Operating System concept
-  \smallskip
+  \begin{itemize} \itemsep 1pt
+  \item Managed an on-line invigilation software development
+    \begin{itemize} \itemsep -0pt \small
+        \item Agile Project Development Manager
+        \item Programmed software server in Java
+        \item Multithreaded, Asynchronous Server
+    \end{itemize}
+  \item Built a robotic system that can autonomously explore and traverse unknown areas (in a team of eight)
+    \begin{itemize} \itemsep -0pt \small
+        \item Chief Arduino Engineer/Hardware Leader
+        \item Designed exploration algorithm \& obstacle dectection algorithm
+        \item Arduino programming, Motor control, Sensor detection
+    \end{itemize}
   \item Used Verilog to implement a five-stage pipelined CPU with MIPS instruction set under simulation
-  \smallskip
-  \item Designed and constructed a blood pulse wave data acquisition system that consists of PPG sensor, signal conditioning, data acquisition, and MATLAB post processing
-  \smallskip
-  \item Managed an on-line invigilation software development and programmed software server part
+    \begin{itemize} \itemsep -0pt \small
+        \item With harzard detection \& data forwarding
+        \item Enhanced with static brunch prediction \& out-of-order excecution
+    \end{itemize}
+  \item Implemented TLB based on understanding of Operating System concept
+    \begin{itemize} \itemsep -0pt \small
+        \item Searching \& replacing algorithm
+        \item Nachos (C++ version) OS environment
+    \end{itemize}
+  \item Designed and constructed a blood pulse wave data acquisition system
+    \begin{itemize} \itemsep -0pt \small
+        \item Signal conditioning, data acquisition
+        \item Used MATLAB for post processing \& graphic display
+    \end{itemize}
   \end{itemize}
 \end{body}
 
-\smallskip
-\medskip
+%\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Leadership
-\header{Leadership Activities}
 
+\smallskip
+\medskip
+\header{Leadership Activities}
 \begin{body}
   \vspace{14pt}
-  \textbf{Chief Arduino Engineer/Hardware Lead}, CE/CZ3004 Multidisciplinary Design Project \hfill {} \emph{Aug 2014 - }\\
+  \textbf{Vice President}, NTU CAC, Dragon \& Lion Dance Troupe \hfill {} \emph{Aug 2013 - May 2014}\\
   \smallskip
-  \textbf{Project Manager}, CE2006 Software Engineering \hfill {} \emph{Jan 2014 - May 2014}\\
-  \smallskip
-  \textbf{Vice President}, NTU Cultural Activities Club, Dragon \& Lion Dance Troupe \hfill {} \emph{Aug 2013 - May 2014}\\
-  \smallskip
-  \textbf{Team Leader}, ACM-ICPC Asia Jakarta Regional Contest team ``FSM" \hfill {} \emph{Oct 2013}\\
+  \textbf{Founder \& Leader}, ACM-ICPC Asia Jakarta Regional Contest team ``FSM" \hfill {} \emph{Oct 2013}\\
 \end{body}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -223,4 +234,21 @@
 %\end{body}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+
+\smallskip
+\medskip
+\header{Skills}
+\begin{body}
+  \vspace{14pt}
+  \textbf{Programming:}{} C/C++, Java, Perl, Python, Shell, Assembly, Verilog, Pascal, \LaTeX, MATLAB, Haskell\\
+  \medskip
+  \textbf{Operating Systems:}{} Linux full-time user, Windows\\
+  \medskip
+  \textbf{Applications:}{} Emacs, Git, Make, Eclipse, Sublime Text, Vim, Xilinx, ModelSim,NetBeans\\
+  \medskip
+  \textbf{Hardware Platform:}{} Arduino, ARM Cortex development board, FPGA\\
+\end{body}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
