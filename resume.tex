@@ -40,9 +40,10 @@
 }
 
 \newcommand{\header}[1]{
-  \begin{changemargin}{-0.5in}{-0.5in}
-    \scshape{#1}\\
+  \begin{changemargin}{-0.6in}{-0.6in}
+    \fontsize{15}{15}\scshape{#1}\\
     \lineover
+    \vspace*{-4pt}
   \end{changemargin}
 }
 
@@ -52,8 +53,7 @@
       {\LARGE \scshape {#1}}\\ \smallskip
       {#2}\\ \smallskip
       {#3}\\ \smallskip
-      {#4}\\ \smallskip
-      {#5}   \smallskip
+      {#4}   \smallskip
     \end{center}
   \end{changemargin}
 }
@@ -62,10 +62,10 @@
 {
 \vspace*{-16pt}
 \begin{changemargin}{-0.25in}{-0.5in}
-}	
+}
 {
 \end{changemargin}
-}	
+}
 
 \newcommand{\school}[4]{
   \textbf{#1} \hfill \emph{#2\\}
@@ -78,8 +78,8 @@
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Name
-\contact{Lu Shengliang}{github.com/lushl9301}{\texttt{medium.com/@Lu\char`_Shengliang}}{SLU001@e.ntu.edu.sg}{(+65) 9611-5113}
+% Contact
+\contact{Lu Shengliang}{github.com/lushl9301}{SLU001@e.ntu.edu.sg}{(+65) 9611-5113}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,75 +98,57 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
 \header{Education}
-
 \begin{body}
   \vspace{14pt}
   \textbf{B.Eng. Computer Engineering} \hfill \emph{Anticipated Graduation: May 2016} \\
-  \emph{\textbf{NTU}, Nanyang Technological University}, Singapore\\
+  \textbf{NTU}, Nanyang Technological University, Singapore\\
   \begin{itemize} \itemsep -0pt  \small
+  \vspace*{-4pt}
   \item CGPA 4.53 of 5.00
   \item Dean's List of Academic Year 2014/15
-  \end{itemize} 
+  \end{itemize}
+  \textbf{NTU President Research Scholar}\\
+  \smallskip
+  \textbf{Senior Middle 3 Scholar}
+
 \end{body}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Research and Internship Experience
 \smallskip
-\medskip
-\header{Parallel Computing Related Experiences}
+\header{Research and Internship Experience}
 \begin{body}
   \vspace{14pt}
-
-  \textbf{Parallel Computing Coursework} \hfill \emph{Aug - Nov 2015}\\
-  \vspace*{-4pt}
+  \textbf{Final Year Project}, {Secure Microkernel Design} \hfill \emph{Aug 2015 - Current}\\
+  \vspace*{-6pt}
   \begin{itemize} \itemsep -0pt  \small
-  \item Learned knowledge about parallel computing
-  \item Programmed MPI-based programs to solve all-pair shortest path problem
-  \item Programmed Openmp-based programs
-  \item Programmed more than 3000 lines of CUDA
-  \item Optimized CUDA-based Floyd algorithm from 50 times speedup to more than 500
-  \end{itemize}
-
-  \textbf{Leadership}, {Team NTU III leader} \hfill \emph{Oct 2015 - Current}\\
-  \vspace*{-4pt}
-  \begin{itemize} \itemsep -0pt  \small
-  \item Participating in 5th ISC-HPCAC Student Cluster Competition during 20 - 22 Jun 2016
-  \item Leading a team of 5 undergraduate students
-  \item Conducting peer training
+  \item Studying XtratuM bare-metal hypervisor
+  \item Reading and Debugging C code and SPARC assembly code
+  \item Learning hypercall and trap handler mechanism
   \end{itemize}
 
   \textbf{Internship}, {Building of a GPU Computing Research Cluster} \hfill \emph{Jul - Oct 2015}\\
-  \vspace*{-4pt}
+  \vspace*{-6pt}
   \begin{itemize} \itemsep -0pt  \small
   \item Attached to Rapid-Rich Object Search Lab, NTU
   \item Used Rocks cluster distribution
   \item Configured head node and compute nodes network connections
   \item Used Docker for Cuda GPU computing and LXC for resources provision and control
-  \item Provided solutions for user management
   \end{itemize}
 
-\end{body}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Experience
-\header{Other Experiences}
-
-\begin{body}
-  \vspace{14pt}
-
   \textbf{Undergraduate Research Project}, {Study of Healthcare and Wellness Science using Wearable Sensors through Scientific Literature Approach} \hfill \emph{Sep 2014 - Jun 2015}\\
-  \vspace*{-4pt}
+  \vspace*{-6pt}
   \begin{itemize} \itemsep -0pt  \small
   \item Attached to Neural \& Biomedical Technology Department (A*star $I^{2}R$ Singapore)
   \item Developed a text mining tool using Perl \& Python for analyzing research publication abstracts
-  \item Used Regex and simple data structures
   \item Solved case studies of 300,000 samples within 1 minute
   \item Fortified biomedical text mining by deploying web crawler
   \item Distinguished text mining situations using biomedical and multidisciplinary case studies
-  \item Supervised by Associate Professor Wang Ping and Dr. Ge Yu
   \end{itemize}
 
   \textbf{Internship}, {Development of Secure Thin Client for ATM} \hfill \emph{Dec 2014 - May 2015}\\
-  \vspace*{-4pt}
+  \vspace*{-6pt}
   \begin{itemize} \itemsep -0pt  \small
   \item Modified and installed XtratuM Hypervisor on x86 PC
   \item Developed a Linux USB device driver
@@ -174,28 +156,37 @@
   \item Compiled and installed Linux kernel into XtratuM
   \item Used Makefile, Bash and Perl scripts
   \end{itemize}
+\end{body}
 
-  \textbf{Contest}, {2013 ACM-ICPC Asia Jakarta Regional Contest} \hfill \emph{Oct 2013}\\
-  \vspace*{-4pt}
+% \pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Competition Experience
+\header{Competition Experiences}
+
+\begin{body}
+  \vspace{14pt}
+
+  \textbf{2013 ACM-ICPC Asia Jakarta Regional Contest} \hfill \emph{Oct 2013}\\
+  \vspace*{-6pt}
   \begin{itemize} \itemsep -0pt  \small
   \item Used Java Programming Language
   \item Participated representing School of Computer Engineering NTU
   \item Solved 3 problems (in team)
   \end{itemize}
   
-  \textbf {Contest}, {National Olympiad in Informatics, China} \hfill \emph{Jul 2010}\\
-  \vspace*{-4pt}
+  \textbf{National Olympiad in Informatics, China} \hfill \emph{Jul 2010}\\
+  \vspace*{-6pt}
   \begin{itemize} \itemsep -0pt \small
   \item Used Pascal Programming Language
   \item Solved algorithm problems under Linux environment
   \item Won Bronze medalist
   \end{itemize}
 
-  \textbf {Contest}, {National Olympiad in Informatics in Provinces, China} \hfill \emph{Sep 2006 - Nov 2010}\\
-  \vspace*{-4pt}
+  \textbf{National Olympiad in Informatics in Provinces, China} \hfill \emph{Sep 2006 - Nov 2010}\\
+  \vspace*{-6pt}
   \begin{itemize} \itemsep -0pt \small
-  \item Used Pascal Programming Language
-  \item Solved algorithm problems under Windows environment
+  \item Studied algorithm and data structure since 13 years old
+  % \item Solved algorithm problems under Windows environment
   \end{itemize}
 \end{body}
 
@@ -214,65 +205,94 @@
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\pagebreak
 %Project Highlights
-\smallskip
-\medskip
+%\pagebreak
 \header{Coursework Highlights}
 \begin{body}
   \vspace{14pt}
-  \begin{itemize} \itemsep 1pt
-  \item Managed an online invigilation software development
+  % \begin{itemize} \itemsep 1pt
+  % \vspace*{-2pt}
+  \textbf{Programmed parallel all-pair shortest path problem solutions}\\
+  \vspace*{-6pt}
+    \begin{itemize} \itemsep -0pt \small
+        \item MPI-based programs
+        \item Openmp-based programs
+        \item Cuda-based programs (more than 3000 lines of code)
+        \item Profiling and optimization of different parallel programs
+    \end{itemize}
+  \vspace*{-6pt}
+  \textbf{Managed an online invigilation software development}\\
+  \vspace*{-6pt}
     \begin{itemize} \itemsep -0pt \small
         \item Agile Project development manager
         \item Multithreaded, asynchronous video server development in Java
     \end{itemize}
-  \item Built a robotic system that can autonomously explore and traverse unknown areas
+  \vspace*{-6pt}
+  \textbf{Built a robotic system to explore and traverse unknown areas automaticly}\\
+  \vspace*{-6pt}
     \begin{itemize} \itemsep -0pt \small
         \item Chief Arduino Engineer/Hardware Leader in a team of eight
         \item Exploration algorithm \& obstacle detection algorithm
         \item Arduino programming, Motor control, Sensor detection
     \end{itemize}
-  \item Implemented MIPS CPU under simulation in Verilog
+  \vspace*{-6pt}
+  \textbf{Implemented MIPS CPU under simulation in Verilog}\\
+  \vspace*{-6pt}
     \begin{itemize} \itemsep -0pt \small
         \item Five-stage pipelining
         \item Hazard detection \& data forwarding
         \item Static branch prediction \& out-of-order execution as enhancements
     \end{itemize}
-  \item Implemented TLB based on understanding of Operating System concept
-    \begin{itemize} \itemsep -0pt \small
-        \item Nachos (C++ version) OS environment
-        \item Searching \& replacing algorithm programming
-    \end{itemize}
-  \item Designed and constructed a blood pulse wave data acquisition system
-    \begin{itemize} \itemsep -0pt \small
-        \item Signal conditioning, data acquisition
-        \item Post processing \& graphic display in MatLab
-    \end{itemize}
-  \end{itemize}
+
+  % \item Implemented TLB based on understanding of Operating System concept
+  %   \begin{itemize} \itemsep -0pt \small
+  %       \item Nachos (C++ version) OS environment
+  %       \item Searching \& replacing algorithm programming
+  %   \end{itemize}
+
+  % \item Designed and constructed a blood pulse wave data acquisition system
+  %   \begin{itemize} \itemsep -0pt \small
+  %       \item Signal conditioning, data acquisition
+  %       \item Post processing \& graphic display in MatLab
+  %   \end{itemize}
+
 \end{body}
 
 %\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Leadership
 % 
-% \smallskip
-% \medskip
-% \header{Leadership Activities}
-% \begin{body}
-%   \vspace{14pt}
-%   \textbf{Vice President}, NTU Dragon \& Lion Dance Troupe \hfill {} \emph{Aug 2013 - Jul 2014}\\
-%   \begin{itemize} \itemsep -0pt \small
-%         \item Top tier club under Cultural Activities Club
-%         \item More than 40 active members
-%         \item Organizer of nationwide lion dance competition in Singapore
-%   \end{itemize}
-%   \smallskip
-%   \textbf{Founder \& Leader}, ACM-ICPC Asia Jakarta Regional Contest team ``FSM" \hfill {} \emph{Oct 2013}\\
-%   \begin{itemize} \itemsep -0pt \small
-%         \item Self-organized training without supervision
-%   \end{itemize}
-% \end{body}
+\header{Leadership Activities}
+\begin{body}
+  \vspace{14pt}
+  \textbf{Group Project Leader}, {Undergraduate Coursework} \hfill \emph{Aug 2012 - Current} \\
+  \vspace*{-6pt}
+  \begin{itemize} \itemsep -0pt \small
+    \item Team leader of 9 projects (in total 13 projects) for core modules
+    \item Project scheduling and team management
+  \end{itemize}
+
+  \textbf{Team Leader}, {ISC-HPCAC Student Cluster Competition} \hfill \emph{Oct 2015 - Current}\\
+  \vspace*{-6pt}
+  \begin{itemize} \itemsep -0pt \small
+    \item Leader of Team NTU III, 5 undergraduate students
+    \item Conducting peer training
+  \end{itemize}
+
+  \textbf{Vice President}, NTU Dragon \& Lion Dance Troupe \hfill {} \emph{Aug 2013 - Jul 2014}\\
+  \vspace*{-6pt}
+  \begin{itemize} \itemsep -0pt \small
+    \item Top tier club under Cultural Activities Club
+    \item More than 40 active members
+    \item Organizer of nationwide lion dance competition in Singapore
+  \end{itemize}
+
+  \textbf{Founder \& Leader}, ACM-ICPC Asia Jakarta Regional Contest team ``FSM" \hfill {} \emph{Oct 2013}\\
+  \vspace*{-6pt}
+  \begin{itemize} \itemsep -0pt \small
+    \item Self-organized training without supervision
+  \end{itemize}
+\end{body}
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Awards and Honors
@@ -289,7 +309,6 @@
 % Skills
 
 \smallskip
-\medskip
 \header{Skills}
 \begin{body}
   \vspace{14pt}
